@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url(custom-font/Barcelona\ 24-25\ Tipografstore.otf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+    color: white;
+    font-family: 'CustomFont';
+    font-weight: bold;
+    background-color: #004D98;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 25px;
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: 'CustomFont';
+    font-weight: bold;
+    font-size: 30px;
+    color: #004D98;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#hazte-socio {
+    text-align: center;
+}
+
+h3{
+    font-family: 'CustomFont';
+    font-weight: bold;
+    font-size: 25px;
+    color: #004D98;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#logo-barcelona {
+    text-align: center;
+    margin: 20px 0;
+    background-color: darkred;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.navegacion {
+  background: #004b93;
+}
+
+.navegacion summary {
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  user-select: none;
+  font-family: 'CustomFont';
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0;
+}
+
+.navegacion ul li a {
+  display: inline-block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: 'CustomFont';
+  font-weight: bold;
+  font-size: larger;
+  margin: 0;
+}
+
+.navegacion ul li a:hover {
+  background: #003366;
+}
+
+p{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 20px;
+}
+
+#jugadores {
+    font-family: Arial, sans-serif;
+    gap: 20px;
+    margin: 20px;
+}
+
+.imagen-jugadores {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #004D98;
+    border-radius: 10px;
+}
+
+#tabla {
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+#fuente-palmares {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+ul{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.navegacion-interna {
+  background: darkred;
+  margin: 0;
+}
+
+.navegacion-interna ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navegacion-interna ul li{
+    display: inline;
+    text-align: center;
+}
+
+.navegacion-interna ul li a {
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: 'CustomFont';
+  font-weight: bold;
+  font-size: larger;
+  display: inline-block;
+}
+
+.navegacion-interna ul li a:hover {
+  background: red;
+}
+
+.formulario {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #004D98;
+    border-radius: 10px;
+    width: 300px;
+    background-color: white;
+    font-family: 'CustomFont';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer{
+    background-color: #004D98;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-family: 'CustomFont';
+    font-weight: bold;
+    font-size: 30px;
+}

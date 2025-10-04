@@ -2,16 +2,18 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FC Barcelona - LAB</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
     <h1>FC Barcelona</h1>
-    <figure>
+    <figure id="logo-barcelona">
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/2020px-FC_Barcelona_%28crest%29.svg.png" alt="Escudo del FC Barcelona" width="200px">
-        <figcaption>Escudo del FC Barcelona</figcaption>
     </figure>
-    <nav>
+    </header>
+    <nav class="navegacion">
         <details>
         <summary>Menú de navegación</summary>
     <ul>
@@ -22,12 +24,10 @@
     </ul>
     </details>
     </nav>
-    </header>
     <main>
-<title>FC Barcelona Laboratorio 03</title>
 <hr>
 <article id="introduccion">
-<h1>Introducción al FC Barcelona</h1>
+<h2>Introducción al FC Barcelona</h2>
 <hr>
 <p>"Barça futbol" se refiere al Fútbol Club Barcelona (FC Barcelona), un club de fútbol 
     español conocido por su apodo "Barça", sus colores azulgranas y su historia de 
@@ -36,25 +36,24 @@
     España</p>
 <hr>
 </article>
-<article id="jugadores">
+<article class="jugadores-principales">
 <h2>Jugadores principales</h2>
 <hr>
-<ul>
+<ul id="jugadores">
 <li>Lamine Yamal – Delantero</li>
 <li>Pedri – Mediocampista</li>
 <li>Pau Cubarsí – Defensa</li>
 </ul>
 <hr>
 <a href="https://www.google.com/search?client=opera-gx&q=barcelona+vs+newcastlke&sourceid=opera&ie=UTF-8&oe=UTF-8#sie=m;/g/11xvtg6b7m;2;/m/0c1q0;ln;fp;1;;;">
-<img src="https://pbs.twimg.com/media/G1KR56qWEAA52L3.jpg" alt="Equipo FC Barcelona" width="400">
+<img class="imagen-jugadores" src="https://pbs.twimg.com/media/G1KR56qWEAA52L3.jpg" alt="Equipo FC Barcelona" width="400">
 </a>
 </article>
 <hr>
 <article id="palmares">
-<hr>
 <h2>Palmarés</h2>
 <hr>
-<table border="1" cellpadding="5">
+<table id="tabla" border="1" cellpadding="5">
 <tr><th>Competición</th><th>Títulos</th></tr>
 <tr><td>Liga</td><td>26</td></tr>
 <tr><td>Copa del Rey</td><td>31</td></tr>
@@ -65,7 +64,7 @@
 <tr><td>Supercopa de España</td><td>15</td></tr>
 <tr><th>Total de titulos</th><td>63</td></tr>
 </table>
-<p>
+<p id="fuente-palmares">
     <a href="https://www.fcbarcelona.es/es/futbol/primer-equipo/palmares">Fuente: FC Barcelona</a>
 </p>
 </article>
