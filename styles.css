@@ -86,6 +86,9 @@ body {
 
 .navegacion ul li a:hover {
   background: #003366;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
 }
 
 p{
@@ -107,16 +110,39 @@ p{
     border-radius: 10px;
 }
 
-#tabla {
-    margin: 20px auto;
-    border-collapse: collapse;
+#tablaPalmares {
+    margin: 20px 100px 20px 100px;
+    border-collapse: separate;
     font-family: Arial, sans-serif;
+    border-radius: 20px;
+    border-spacing: 0 20px;
 }
 
-#fuente-palmares {
+#tablaPalmares td {
+    padding: 10px;
     text-align: center;
-    font-family: Arial, sans-serif;
-    margin: 10px;
+    border-radius: 20px;
+}
+
+#tablaPalmares tr{
+    border-radius: 20px;
+    border-spacing: 2000px 2000px 2000px 2000px;
+}
+
+#tablaPalmares tr:nth-child(odd) {
+    background-color: #E6E6E6;
+}
+
+#tablaPalmares tr:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0.2, 0.2, 0.2, 0.2);
+    transition: transform 0.2s ease;
+    border-radius: 20px;
+
+}
+
+#tablaPalmares img {
+    border-radius: 20px;
 }
 
 ul{
@@ -166,6 +192,11 @@ ul{
     font-family: 'CustomFont';
     font-weight: bold;
     font-size: 20px;
+}
+
+#champions {
+    margin: 0;
+    position: static;
 }
 
 footer{
