@@ -23,37 +23,41 @@ h1 {
     font-size: 2.5rem;
 }
 
-h2{
+h2 {
     font-family: 'CustomFont';
     font-weight: bold;
     font-size: 30px;
     color: #004D98;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-
-#hazte-socio {
+    margin: 20px;
+    padding: 20px;
     text-align: center;
 }
 
 h3{
-    font-family: 'CustomFont';
-    font-weight: bold;
-    font-size: 25px;
-    color: #004D98;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-
-#logo-barcelona {
-    text-align: center;
-    margin: 20px 0;
-    background-color: darkred;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.4);
     margin: 0;
+    padding: 10px;
+    transition: bottom 0.4s ease;
+    font-size: 100px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.navegacion ul {
-  list-style: none;
+h4{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    transition: bottom 0.4s ease;
+    font-size: 20px;
+    white-space: nowrap;
 }
 
 .navegacion {
@@ -68,6 +72,7 @@ h3{
   display: flex;
   align-items: center;
   gap: 25px;
+  list-style: none;
 }
 
 .navegacion ul li a {
@@ -84,10 +89,11 @@ h3{
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transform: translateY(-50px);
+  transform: scale(50);
 }
 
 .navegacion .logo img {
-  width: 100px;
+  width: 145px;
   display: block;
   transition: none;
 }
@@ -97,74 +103,51 @@ h3{
   top: 5px;
 }
 
-p{
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    margin: 20px;
+img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-#jugadores {
-    font-family: Arial, sans-serif;
-    gap: 20px;
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
     margin: 20px;
+    flex-wrap: nowrap;
 }
 
-.imagen-jugadores {
-    display: block;
-    margin: 20px auto;
-    border: 5px solid #004D98;
+.contenedor-interno{
+    flex: 1;
+    background-color: #3D000B;
+    margin: 5px 10px 5px 0;
+    position: relative;
+    overflow: hidden;
     border-radius: 10px;
 }
 
-ul{
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    margin: 20px;
+.contenedor-interno:hover .texto-imagen{
+    bottom: 0;
 }
 
-.navegacion-interna {
-  background: darkred;
-  margin: 0;
+.contenedor-interno:hover h3{
+    bottom: 70px;
 }
 
-.navegacion-interna ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.contenedor-interno:hover h4{
+    bottom: 50px;
+}
+
+.texto-imagen{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: -100%;
+    transition: bottom 0.4s ease;
+    width: 100%;
     text-align: center;
-}
-
-.navegacion-interna ul li{
-    display: inline;
-    text-align: center;
-}
-
-.navegacion-interna ul li a {
-  padding: 15px 20px;
-  color: white;
-  text-decoration: none;
-  font-family: 'CustomFont';
-  font-weight: bold;
-  font-size: larger;
-  display: inline-block;
-}
-
-.navegacion-interna ul li a:hover {
-  background: red;
-  transition: all 0.4s ease;
-  transform: translateY(-3px);
-}
-
-.formulario {
-    margin: 20px auto;
-    padding: 20px;
-    border: 2px solid #004D98;
-    border-radius: 10px;
-    width: 300px;
-    background-color: white;
-    font-family: 'CustomFont';
-    font-weight: bold;
-    font-size: 20px;
 }
 
 footer{
