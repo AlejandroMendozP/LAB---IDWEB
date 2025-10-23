@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Socios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navegacion">
+    <ul>
+        <li class="logo">
+        <a href="index.html">
+            <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/2020px-FC_Barcelona_%28crest%29.svg.png" alt="Equipo FC Barcelona" width="100">
+            </figure>
+        </a>
+        </li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="plantilla.html">Jugadores</a></li>
+        <li><a href="palmares.html">Palmarés</a></li>
+        <li><a href="socios.html">Hazte socio</a></li>
+    </ul>
+    </nav>
+    <header><h1>Hazte socio del Futbol Club Barcelona</h1></header>
+    <main>
+        <h2 id="hazte-socio">Diferentes paquetes</h2>
+        <center>
+        <table id="tabla" border="1" cellpadding="5">
+            <tr><th colspan="3">Escoge tu plan</th></tr>
+            <tr><td>
+                <img src="https://store.fcbarcelona.com/cdn/shop/files/BARC_A_KIDS_C1_LK_07_2559.jpg?v=1754472663&width=1200" alt="Paquete infantil" width="150px" height="150px">
+            </td><td>Paquete infantil: <hr>
+                - Acceso a partidos locales<br>
+                - Descuentos en la tienda oficial<br>
+                - Eventos exclusivos para niños<br>
+                - Fotografías con jugadores<br>
+                Precio: $50 anuales
+            </td></tr>
+            <tr><td>
+                <img src="https://store.fcbarcelona.com/cdn/shop/files/HJ4590-456_415227879_D_A_1X1_e3028dab-beb3-4a47-a7bc-0783a5f75462.jpg?v=1751431616&width=1200" alt="Paquete adulto" width="150px" height="150px">
+            </td><td>Paquete adulto: <hr>
+                - Acceso a todos los partidos<br>
+                - Descuentos en la tienda oficial<br>
+                - Invitaciones a eventos exclusivos<br>
+                - Acceso a contenido digital exclusivo<br>
+                - Participación en sorteos y promociones<br>
+                Precio: $120 anuales
+            </td></tr>
+        </table>
+        </center>
+        <form class="formulario" action="#" method="post">
+            <br>
+            <center><legend>Formulario de registro</legend></center>
+            <br>
+            <label for="nombres">Nombre completo:</label>
+            <input type="text" id="nombres" name="nombres" required>
+            <br><br>
+            <label for="apellidos">Apellido completo:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            <br><br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="nacimiento" name="nacimiento" required>
+            <br><br>
+            <label for="telefono">Numero de teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+            <br><br>
+            <label>Género:</label>
+            <input type="radio" id="masc" name="genero" value="M">
+            <label for="masc">Masculino</label>
+            <input type="radio" id="fem" name="genero" value="F">
+            <label for="fem">Femenino</label>
+            <br><br>
+            <label for="paquete">Paquete a adquirir:</label>
+            <select name="paquete" id="paquete" required>
+                <option disabled selected>Seleccione el paquete a adquirir</option>
+                <option>Paquete infantil</option>
+                <option>Paquete adulto</option>
+            </select>
+            <br><br>
+            <input type="checkbox" name="terminos" required>
+            Deseo recibir noticias y ofertas del FC Barcelona
+            <br><br>
+            <input type="checkbox" name="terminos" required>
+            Acepto los términos y condiciones
+            <br><br>
+            <button type="submit">Registrarse</button>
+            <button type="reset">Borrar formulario</button>
+        </form>
+    </main>
+</body>
+</html>

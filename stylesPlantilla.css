@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url(custom-font/Barcelona\ 24-25\ Tipografstore.otf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+    color: white;
+    font-family: 'CustomFont';
+    font-weight: bold;
+    background-color: #004D98;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 25px;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: 'CustomFont';
+    font-weight: bold;
+    font-size: 30px;
+    color: #004D98;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+h3{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+    padding: 10px;
+    transition: bottom 0.4s ease;
+    font-size: 100px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h4{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    transition: bottom 0.4s ease;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.navegacion {
+  background-color: #3D000B;
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  margin: 15px 0 25px 0;
+}
+
+.navegacion ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.navegacion ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  font-family: 'CustomFont';
+  font-weight: bold;
+  font-size: 30px;
+  transition: all 0.3s ease;
+}
+
+.navegacion ul li:not(.logo) a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-50px);
+  transform: scale(50);
+}
+
+.navegacion .logo img {
+  width: 145px;
+  display: block;
+  transition: none;
+}
+
+.navegacion .logo {
+  position: relative;
+  top: 5px;
+}
+
+img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    margin: 20px;
+    flex-wrap: nowrap;
+}
+
+.contenedor-interno{
+    flex: 1;
+    background-color: #3D000B;
+    margin: 5px 10px 5px 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.contenedor-interno:hover .texto-imagen{
+    bottom: 0;
+}
+
+.contenedor-interno:hover h3{
+    bottom: 70px;
+}
+
+.contenedor-interno:hover h4{
+    bottom: 50px;
+}
+
+.texto-imagen{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: -100%;
+    transition: bottom 0.4s ease;
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    background-color: #004D98;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-family: 'CustomFont';
+    font-weight: bold;
+    font-size: 30px;
+}

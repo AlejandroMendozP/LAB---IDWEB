@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url(custom-font/Barcelona\ 24-25\ Tipografstore.otf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: white;
+    font-family: 'CustomFont';
+    font-weight: bold;
+    background-color: #004D98;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 25px;
+    font-size: 2.5rem;
+    box-sizing: border-box;
+}
+
+.navegacion {
+  background-color: #3D000B;
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  margin: 15px 0 25px 0;
+}
+
+.navegacion ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.navegacion ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  font-family: 'CustomFont';
+  font-weight: bold;
+  font-size: 30px;
+  transition: all 0.3s ease;
+}
+
+.navegacion ul li:not(.logo) a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-50px);
+  transform: scale(50);
+}
+
+.navegacion .logo img {
+  width: 100px;
+  display: block;
+  transition: none;
+}
+
+.navegacion .logo {
+  position: relative;
+  top: 5px;
+}
+
+table {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgba(0, 0, 0, 0.7);;
+    position: relative;
+    border-collapse: separate;
+    font-family: Arial, sans-serif;
+    border-spacing: 0 20px;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 20px 20px 20px 10px;
+}
+
+#tablaPalmares td {
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+}
+
+#tablaPalmares tr{
+    border-radius: 20px;
+    border-spacing: 2000px 2000px 2000px 2000px;
+    padding: 50px;
+}
+
+#tablaPalmares tr:nth-child(odd) {
+    background-color: #541313;
+}
+
+#tablaPalmares tr:nth-child(even) {
+    background-color: #0C003D;
+}
+
+#tablaPalmares tr:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0.2, 0.2, 0.2, 0.2);
+    transition: transform 0.2s ease;
+    border-radius: 20px;
+}
+
+#tablaPalmares img {
+    border-radius: 20px;
+}
+
+#champions {
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
+
+.contenedor{
+  margin: 0;
+}
+
+footer{
+    background-color: #004D98;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-family: 'CustomFont';
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
