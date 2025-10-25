@@ -24,6 +24,7 @@
     </nav>
     <header><h1>Hazte socio del Futbol Club Barcelona</h1></header>
     <main>
+        <script src="validar.js"></script>
         <h2 id="hazte-socio">Diferentes paquetes</h2>
         <center>
         <table id="tabla" border="1" cellpadding="5">
@@ -49,24 +50,24 @@
             </td></tr>
         </table>
         </center>
-        <form class="formulario" action="#" method="post">
+        <form class="formulario" action="#" method="post" onsubmit="return validarFormulario()">
             <br>
             <center><legend>Formulario de registro</legend></center>
             <br>
             <label for="nombres">Nombre completo:</label>
-            <input type="text" id="nombres" name="nombres" required>
+            <input type="text" id="nombres" name="nombres">
             <br><br>
             <label for="apellidos">Apellido completo:</label>
-            <input type="text" id="apellidos" name="apellidos" required>
+            <input type="text" id="apellidos" name="apellidos">
             <br><br>
             <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email">
             <br><br>
             <label for="nacimiento">Fecha de nacimiento:</label>
-            <input type="date" id="nacimiento" name="nacimiento" required>
+            <input type="date" id="nacimiento" name="nacimiento">
             <br><br>
             <label for="telefono">Numero de teléfono:</label>
-            <input type="text" id="telefono" name="telefono" required>
+            <input type="text" id="telefono" name="telefono">
             <br><br>
             <label>Género:</label>
             <input type="radio" id="masc" name="genero" value="M">
@@ -75,16 +76,16 @@
             <label for="fem">Femenino</label>
             <br><br>
             <label for="paquete">Paquete a adquirir:</label>
-            <select name="paquete" id="paquete" required>
+            <select name="paquete" id="paquete">
                 <option disabled selected>Seleccione el paquete a adquirir</option>
                 <option>Paquete infantil</option>
                 <option>Paquete adulto</option>
             </select>
             <br><br>
-            <input type="checkbox" name="terminos" required>
+            <input type="checkbox" name="terminos">
             Deseo recibir noticias y ofertas del FC Barcelona
             <br><br>
-            <input type="checkbox" name="terminos" required>
+            <input type="checkbox" name="terminos">
             Acepto los términos y condiciones
             <br><br>
             <button type="submit">Registrarse</button>
