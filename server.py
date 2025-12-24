@@ -1,10 +1,8 @@
-from wsgiref.simple_server import make_server
 import os
 import mimetypes
 import mysql.connector
 import urllib.parse
 import hashlib
-from server import application
 
 MYSQL_PASSWORD = os.environ.get("MYSQL_PASSWORD")
 BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
