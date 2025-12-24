@@ -5,7 +5,7 @@ import mysql.connector
 import urllib.parse
 import hashlib
 
-
+MYSQL_PASSWORD = os.environ.get("MYSQL_PASSWORD")
 BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
 
 def serve_static(path):
@@ -28,13 +28,13 @@ def serve_static(path):
 
 def conectar_db():
     return mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="",
+        host="alejndmp.mysql.pythonanywhere-services.com",
+        user="alejndmp",
+        password=MYSQL_PASSWORD,
         database="socios"
     )
 
-def app(environ, start_response):
+def application(environ, start_response):
     path = environ.get("PATH_INFO", "/")
 
     if environ["REQUEST_METHOD"] == "POST" and path == "/guardar":
@@ -103,6 +103,6 @@ def app(environ, start_response):
 
 
 if __name__ == "__main__":
-    with make_server("localhost", 8000, app) as server:
+    with make_server("localhost", 8000, application) as server:
         print("Servidor en http://localhost:8000")
         server.serve_forever()
