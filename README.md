@@ -13,3 +13,4 @@ Título: Página web del FC Barcelona
 URL: https://github.com/AlejandroMendozP/LAB---IDWEB
 Descripción: La pagína simula una página oficial del FC Barcelona, tiene 5 html con distintas funciones que presentan historia, palmares, jugadores y un formulario de socios junto con el index.
 Se utilizó HTML, CSS, JS, Python y SQL para todo el proyecto y su integración en conjunto
+URL HOSPEDADOR: https://mendozapantigoso.pythonanywhere.com
