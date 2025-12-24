@@ -4,11 +4,14 @@ import mysql.connector
 import urllib.parse
 import hashlib
 
+# Contraseña MySQL directamente en el código
 MYSQL_PASSWORD = "fortnite"
+
+# Carpeta de archivos estáticos
 BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
 
 def serve_static(path):
-
+    """Sirve archivos estáticos desde la carpeta BASE_DIR"""
     if path == "/":
         path = "/index.html"
 
@@ -18,7 +21,6 @@ def serve_static(path):
         tipo_mime, _ = mimetypes.guess_type(ruta)
         if not tipo_mime:
             tipo_mime = "application/octet-stream"
-        
         with open(ruta, "rb") as f:
             contenido = f.read()
         return contenido, tipo_mime
@@ -26,6 +28,7 @@ def serve_static(path):
         return None, None
 
 def conectar_db():
+    """Conecta a la base de datos MySQL"""
     return mysql.connector.connect(
         host="alejndmp.mysql.pythonanywhere-services.com",
         user="alejndmp",
@@ -34,6 +37,7 @@ def conectar_db():
     )
 
 def application(environ, start_response):
+    """Función WSGI principal"""
     path = environ.get("PATH_INFO", "/")
 
     if environ["REQUEST_METHOD"] == "POST" and path == "/guardar":
@@ -44,9 +48,9 @@ def application(environ, start_response):
 
             def get(campo):
                 return data.get(campo, [""])[0]
-            print("POST RECIBIDO:", data)
 
             password_hash = hashlib.sha256(get("contraseña").encode("utf-8")).hexdigest()
+
             conn = conectar_db()
             cursor = conn.cursor()
 
