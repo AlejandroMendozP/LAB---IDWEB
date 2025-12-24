@@ -8,9 +8,9 @@
 8. En cuarto lugar, el palmaarés, que muestra una tabla con todos los trofeos del FC Barcelona, y de fondo una imagen con un position.
 9. En último lugar, un formulario de socios, en donde se ingresan los datos y se mandan a una base de datos externa, se pueden seleccionar paquetes y cada dato se valida para que esten correctamente escritos o seleccionados.
    Muchas gracias.
-DATOS
-Título: Página web del FC Barcelona
-URL: https://github.com/AlejandroMendozP/LAB---IDWEB
-Descripción: La pagína simula una página oficial del FC Barcelona, tiene 5 html con distintas funciones que presentan historia, palmares, jugadores y un formulario de socios junto con el index.
-Se utilizó HTML, CSS, JS, Python y SQL para todo el proyecto y su integración en conjunto
-URL HOSPEDADOR: https://mendozapantigoso.pythonanywhere.com
+ DATOS
+ Título: Página web del FC Barcelona
+ URL: https://github.com/AlejandroMendozP/LAB---IDWEB
+ Descripción: La pagína simula una página oficial del FC Barcelona, tiene 5 html con distintas funciones que presentan historia, palmares, jugadores y un formulario de  socios junto con el index.
+ Se utilizó HTML, CSS, JS, Python y SQL para todo el proyecto y su integración en conjunto
+ URL HOSPEDADOR: https://mendozapantigoso.pythonanywhere.com
