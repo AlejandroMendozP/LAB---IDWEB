@@ -4,7 +4,7 @@ import mysql.connector
 import urllib.parse
 import hashlib
 
-MYSQL_PASSWORD = os.environ.get("MYSQL_PASSWORD")
+MYSQL_PASSWORD = "fortnite"
 BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
 
 def serve_static(path):
