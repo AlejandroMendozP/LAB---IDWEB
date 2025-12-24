@@ -1,8 +1,19 @@
 @font-face {
-    font-family: 'CustomFont';
+    font-family: CustomFont;
     src: url(custom-font/Barcelona\ 24-25\ Tipografstore.otf);
     font-weight: bold;
-    font-style: bold;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: CustomFont2;
+  src: url(custom-font/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: CustomFont3;
+  src: url(custom-font/Montserrat-Italic-VariableFont_wght.ttf);
+  font-style: normal; 
 }
 
 html, body {
@@ -13,7 +24,7 @@ html, body {
 
 h1 {
     color: white;
-    font-family: 'CustomFont';
+    font-family: CustomFont;
     font-weight: bold;
     background-color: #004D98;
     text-align: center;
@@ -24,7 +35,7 @@ h1 {
 }
 
 h2{
-    font-family: 'CustomFont';
+    font-family: CustomFont;
     font-weight: bold;
     font-size: 30px;
     color: #004D98;
@@ -37,7 +48,7 @@ h2{
 }
 
 h3{
-    font-family: 'CustomFont';
+    font-family: CustomFont;
     font-weight: bold;
     font-size: 25px;
     color: #004D98;
@@ -74,7 +85,7 @@ h3{
   text-decoration: none;
   color: white;
   transition: color 0.3s ease;
-  font-family: 'CustomFont';
+  font-family: CustomFont;
   font-weight: bold;
   font-size: 30px;
   transition: all 0.3s ease;
@@ -98,28 +109,32 @@ h3{
 }
 
 p{
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    margin: 20px;
+  font-family: CustomFont3;
+  font-size: 18px;
+  margin: 20px;
+}
+
+ul li{
+  font-family: CustomFont3;
 }
 
 #jugadores {
-    font-family: Arial, sans-serif;
-    gap: 20px;
-    margin: 20px;
+  font-family: Arial, sans-serif;
+  gap: 20px;
+  margin: 20px;
 }
 
 .imagen-jugadores {
-    display: block;
-    margin: 20px auto;
-    border: 5px solid #004D98;
-    border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+  border: 5px solid #004D98;
+  border-radius: 10px;
 }
 
 ul{
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    margin: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin: 20px;
 }
 
 .navegacion-interna {
@@ -128,22 +143,22 @@ ul{
 }
 
 .navegacion-interna ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .navegacion-interna ul li{
-    display: inline;
-    text-align: center;
+  display: inline;
+  text-align: center;
 }
 
 .navegacion-interna ul li a {
   padding: 15px 20px;
   color: white;
   text-decoration: none;
-  font-family: 'CustomFont';
+  font-family: CustomFont;
   font-weight: bold;
   font-size: larger;
   display: inline-block;
@@ -159,7 +174,7 @@ ul{
   margin: 0;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 10px;
 }
 
@@ -173,7 +188,7 @@ ul{
 }
 
 .contenedor-interno p{
-  font-family: 'CustomFont';
+  font-family: CustomFont;
   font-weight: bold;
 }
 
@@ -186,25 +201,88 @@ ul{
   width: 20%;
 }
 
-.formulario {
-    margin: 20px auto;
-    padding: 20px;
-    border: 2px solid #004D98;
-    border-radius: 10px;
-    width: 300px;
-    background-color: white;
-    font-family: 'CustomFont';
-    font-weight: bold;
-    font-size: 20px;
+#formulario {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #004D98;
+  border-radius: 10px;
+  width: 300px;
+  background-color: white;
+  font-family: CustomFont3;
+  font-size: 20px;
+}
+
+#formulario input{
+  margin-right: 20px;
+
+}
+
+table {
+  margin: 10px;
+  width: auto;
+  border-radius: 10px;
+}
+
+table p:nth-child(odd){
+  font-family: CustomFont2;
+}
+
+table p:nth-child(even){
+  font-family: CustomFont3;
+}
+
+td {
+  margin: 10px;
+  vertical-align: middle;
+  padding: 0;
+}
+
+td:first-child {
+  width: 1%;
+}
+
+td:nth-child(2) p{
+  font-size: 30px;
+  text-align: center;
+}
+
+td ul li{
+  font-family: CustomFont2;
+}
+
+table img {
+  width: 25vw;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0;
+}
+
+td a{
+  font-family: 'CustomFont';
+  font-size: 25px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #3D000B;
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  padding: 100px 0;
+  transition: background-color 0.3s ease;
+}
+
+a:hover{
+  background-color: #004D98;
 }
 
 footer{
-    background-color: #004D98;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    font-family: 'CustomFont';
-    font-weight: bold;
-    font-size: 30px;
+  background-color: #004D98;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  font-family: 'CustomFont';
+  font-weight: bold;
+  font-size: 30px;
 }

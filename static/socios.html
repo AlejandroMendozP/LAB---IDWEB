@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Socios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navegacion">
+    <ul>
+        <li class="logo">
+        <a href="index.html">
+            <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/2020px-FC_Barcelona_%28crest%29.svg.png" alt="Equipo FC Barcelona" width="100">
+            </figure>
+        </a>
+        </li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="plantilla.html">Jugadores</a></li>
+        <li><a href="palmares.html">Palmarés</a></li>
+        <li><a href="socios.html">Hazte socio</a></li>
+    </ul>
+    </nav>
+    <header><h1>Hazte socio del Futbol Club Barcelona</h1></header>
+    <main>
+        <h2 id="hazte-socio">Escoge tu plan</h2>
+        <center>
+        <table border="1" cellpadding="5" id="tabla">
+            <tr><td>
+            <img src="https://estaticos-cdn.prensaiberica.es/clip/34530829-2bfa-4970-aa61-f85ae49ede46_16-9-discover-aspect-ratio_default_0.jpg" alt="Paquete infantil">
+            </td>
+            <td><p>Paquete infantil</p>
+                <p>$50 anuales</p>
+            </td>
+            <td>
+                <ul>
+                <li>Acceso a todos los partidos</li>
+                <li>Descuentos en la tienda oficial</li>
+                <li>Eventos exclusivos para niños</li>
+                <li>Fotografías con jugadores</li>
+                </ul>
+            </td>
+            <td>
+                <a href="#formulario">Registrarme</a>
+            </td>
+            </tr>
+            <tr><td>
+            <img src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2015/11/17/1733946-36677146-2560-1440.jpg" alt="Paquete adulto">
+            </td>
+            <td><p>Paquete adulto</p>
+                <p>$120 anuales</p>
+            </td>
+            <td>
+                <ul>
+                <li>Acceso a todos los partidos</li>
+                <li>Descuentos en la tienda oficial</li>
+                <li>Invitaciones a eventos exclusivos</li>
+                <li>Acceso a contenido digital exclusivo</li>
+                <li>Participación en sorteos y promociones</li>
+                </ul>
+            </td>
+            <td>
+                <a href="#formulario">Registrarme</a>
+            </td>
+            </tr>
+        </table>
+        </center>
+        <form id="formulario" action="/guardar" method="post">
+            <center><h3>Datos personales</h3></center>
+            <label for="nombres">Nombre completo:</label>
+            <input type="text" id="nombres" name="nombres">
+            <br><br>
+            <label for="apellidos">Apellido completo:</label>
+            <input type="text" id="apellidos" name="apellidos">
+            <br><br>
+            <label>Tipo de documento:</label><br>
+            <label for="dni">DNI</label>
+            <input type="radio" id="dni" name="tipo_documento" value="dni"><br>
+            <label for="carnetDeExtranjeria">Carnet de Extranjeria</label>
+            <input type="radio" id="carnetDeExtranjeria" name="tipo_documento" value="carnetDeExtranjeria"><br>
+            <label for="pasaporte">Pasaporte</label>
+            <input type="radio" id="pasaporte" name="tipo_documento" value="pasaporte"><br><br>
+            <label for="numero_documento">Número de documento:</label>
+            <input type="text" id="numero_documento" name="numero_documento">
+            <br><br>
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="nacimiento" name="fecha_nacimiento">
+            <br><br>
+            <label>Género:</label><br>
+            <input type="radio" id="masc" name="genero" value="Masculino">
+            <label for="masc">Masculino</label>
+            <input type="radio" id="fem" name="genero" value="Femenino">
+            <label for="fem">Femenino</label>
+            <br><br>
+            <center><h3>Datos de contacto</h3></center>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion">
+            <br><br>
+            <label for="telefono">Numero de teléfono:</label>
+            <input type="text" id="telefono" name="telefono">
+            <br><br>
+            <center><h3>Datos de la cuenta</h3></center>
+            <label for="email">Correo electrónico de confirmación:</label>
+            <input type="email" id="emailConfirm" name="emailConfirm">
+            <br><br>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña">
+            <br><br>
+            <center><h3>Compra de paquete</h3></center>
+            <label for="tarjeta">Tipo de tarjeta:</label>
+            <select name="tarjeta" id="tarjeta">
+                <option disabled selected value="">Seleccione el tipo de tarjeta</option>
+                <option value="credito">Crédito</option>
+                <option value="debito">Débito</option>
+            </select>
+            <br><br>
+            <label for="numeroTarjeta">Número de tarjeta:</label>
+            <input type="text" id="numeroTarjeta" name="numero_tarjeta">
+            <br><br>
+            <label for="CVV">CVV:</label><br>
+            <input type="text" id="CVV" name="cvv">
+            <br><br>
+            <label for="fechavencimiento">Fecha de vencimiento:</label>
+            <input type="month" id="fechavencimiento" name="fecha_de_vencimiento">
+            <br><br>
+            <label for="paquete">Paquete a adquirir:</label>
+            <select name="paquete" id="paquete">
+                <option disabled selected>Seleccione el paquete a adquirir</option>
+                <option value="Infantil">Paquete infantil</option>
+                <option value="Adulto">Paquete adulto</option>
+            </select>
+            <br><br>
+            <input type="hidden" name="terminosNoticias" value="0">
+            <input type="checkbox" name="terminosNoticias" value="1">
+            Deseo recibir noticias y ofertas
+            <br>
+            <input type="hidden" name="terminoTyC" value="0">
+            <input type="checkbox" name="terminoTyC" value="1" required>
+            Acepto los términos y condiciones
+            <br>
+            <button type="submit">Registrarse</button>
+            <button type="reset">Borrar formulario</button>
+        </form>
+        <div id="resultado"></div>
+    </main>
+    <script src="validar.js"></script>
+</body>
+</html>

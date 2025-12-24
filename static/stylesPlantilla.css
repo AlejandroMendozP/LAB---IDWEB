@@ -93,7 +93,7 @@ h4{
 }
 
 .navegacion .logo img {
-  width: 145px;
+  width: 100px;
   display: block;
   transition: none;
 }
@@ -103,7 +103,7 @@ h4{
   top: 5px;
 }
 
-img {
+.img-plantilla {
   max-width: 70%;
   height: auto;
   display: block;
@@ -125,6 +125,7 @@ img {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .contenedor-interno:hover .texto-imagen{
@@ -148,6 +149,34 @@ img {
     transition: bottom 0.4s ease;
     width: 100%;
     text-align: center;
+}
+
+.imagen-grande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagen-grande img {
+    max-height: 50vh;
+}
+
+#cerrar-imagen {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #dddd;
+    color: #000;
+    margin: 20px;
+    transition: background 0.3s;
+}
+
+#cerrar-imagen:hover {
+    background-color: #004D98;
 }
 
 footer{

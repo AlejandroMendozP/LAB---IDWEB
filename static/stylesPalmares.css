@@ -5,6 +5,12 @@
     font-style: bold;
 }
 
+@font-face {
+  font-family: CustomFont3;
+  src: url(custom-font/Montserrat-Italic-VariableFont_wght.ttf);
+  font-style: normal; 
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -73,11 +79,12 @@ table {
     background-color: rgba(0, 0, 0, 0.7);;
     position: relative;
     border-collapse: separate;
-    font-family: Arial, sans-serif;
+    font-family: CustomFont3;
     border-spacing: 0 20px;
     z-index: 1;
     padding: 20px;
     border-radius: 20px 20px 20px 10px;
+    font-size: 20px;
 }
 
 #tablaPalmares td {
