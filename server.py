@@ -4,6 +4,7 @@ import mimetypes
 import mysql.connector
 import urllib.parse
 import hashlib
+from server import application
 
 MYSQL_PASSWORD = os.environ.get("MYSQL_PASSWORD")
 BASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
@@ -100,9 +101,3 @@ def application(environ, start_response):
         else:
             start_response("404 Not Found", [("Content-Type", "text/html")])
             return [b"<h1>Pagina no encontrada</h1>"]
-
-
-if __name__ == "__main__":
-    with make_server("localhost", 8000, application) as server:
-        print("Servidor en http://localhost:8000")
-        server.serve_forever()
